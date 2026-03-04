@@ -2,12 +2,12 @@ import { Service } from "typedi";
 
 @Service()
 class ClientService {
-	constructor() {}
+	constructor() { }
 
 	public testService() {
 		try {
-			console.log("from client service ", this);
-		} catch (error) {}
+			// console.log("from client service ", this);
+		} catch (error) { }
 	}
 }
 

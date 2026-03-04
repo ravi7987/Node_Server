@@ -1,0 +1,13 @@
+node_modules/
+error.log
+.nyc_output/
+build/
+browser/
+
+# Environment files
+.env
+.env.*
+
+# macOS files
+.DS_Store
+**/ .DS_Store

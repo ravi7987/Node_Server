@@ -17,6 +17,9 @@ class ConnectDataBase {
 
 			switch (database) {
 				case DataBase.MONGODB: {
+					console.log("in here");
+					console.log("url ",Config.env.databaseURL);
+					
 					const connection = await Mongoose.connect(Config.env.databaseURL, {
 						dbName: Config.env.databaseName,
 						autoIndex: false,
@@ -53,7 +56,7 @@ class ConnectDataBase {
 				}
 			}
 		} catch (error: any) {
-			console.log(`Unable to connect to the database`);
+			console.log(`Unable to connect to the database `, error);
 		}
 	}
 }
